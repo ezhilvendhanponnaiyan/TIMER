@@ -1,0 +1,168 @@
+/* select a font */
+
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+:root {
+  --clr-White: hsl(0, 0%, 100%);
+  --clr-Dark-desaturated-blue: hsl(236, 21%, 26%);
+  --clr-Very-dark-blue: hsl(235, 16%, 14%);
+  --clr-dark-blue: hsl(234, 17%, 12%);
+  --clr-Grayish-blue: hsl(237, 18%, 59%);
+  --clr-Soft-red: hsl(345, 95%, 68%);
+  --clr-sky-blue: #8ecae6ff;
+  --clr-blue-green: #219ebcff;
+  --clr-prussian-blue: #023047ff;
+  --clr-selective-yellow: #ffb703ff;
+  --clr-ut-orange: #fb8500ff;
+  --ff-roboto: "Roboto", sans-serif;
+  --ff-noto-sans: "Noto Sans", sans-serif;
+  --ff-Red-Hat-Text: "Red Hat Text", sans-serif;
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  --max-width: 1170px;
+  --fixed-width: 450px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-container {
+  width: 100%;
+  height: 80%;
+  background-color: var(--clr-Very-dark-blue);
+  background-image: url(../images/bg-stars.svg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* margin: 3.3rem; */
+}
+
+.title {
+  margin-top: 3rem;
+  font-size: 20px;
+  letter-spacing: 0.5rem;
+  color: var(--clr-White);
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  gap: 5rem;
+  color: var(--clr-Soft-red);
+}
+
+.Days {
+  background-color: var(--clr-dark-blue);
+  width: 90px;
+  height: 90px;
+  font-size: 3rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  gap: 2rem;
+}
+
+.Hours {
+  background-color: var(--clr-dark-blue);
+  width: 90px;
+  height: 90px;
+  font-size: 3rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  gap: 2rem;
+}
+
+.Minutes {
+  background-color: var(--clr-dark-blue);
+  width: 90px;
+  height: 90px;
+  font-size: 3rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  gap: 2rem;
+}
+
+.seconds {
+  background-color: var(--clr-dark-blue);
+  width: 90px;
+  height: 90px;
+  font-size: 3rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  gap: 2rem;
+}
+
+.days-container,
+.hours-container,
+.Minutes-container,
+.Seconds-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 10rem 0;
+  gap: 2rem;
+}
+
+.days-container h3 {
+  color: var(--clr-Dark-desaturated-blue);
+}
+.hours-container h3 {
+  color: var(--clr-Dark-desaturated-blue);
+}
+.Minutes-container h3 {
+  color: var(--clr-Dark-desaturated-blue);
+}
+
+.Seconds-container h3 {
+  color: var(--clr-Dark-desaturated-blue);
+}
+
+.foot {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: row;
+  background-image: url(./images/pattern-hills.svg);
+  width: 100%;
+  height: 40%;
+}
+
+.foot .image .icon {
+  margin: 2rem;
+}
